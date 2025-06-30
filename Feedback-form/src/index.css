@@ -1,0 +1,17 @@
+@import "tailwindcss";
+.bgcolor-new{
+  background-color: #0f8682;
+}
+.under-bg-color{
+  background-color: #075856;
+}
+*{
+  color:#FFEDF3;
+}
+.bg-color-my{
+  background-color: #0ABAB5;
+
+}
+button{
+  background-color: #075856;
+}
