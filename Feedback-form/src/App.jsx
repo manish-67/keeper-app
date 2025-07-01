@@ -9,7 +9,7 @@ function App() {
 
   // Fetch feedback from backend
   useEffect(() => {
-    fetch('http://localhost:5000/api/feedback')
+    fetch('https://keeper-app-g0o8.onrender.com/api/feedback')
       .then((res) => res.json())
       .then((data) => {
         setFeedbacks(data);
@@ -24,7 +24,7 @@ function App() {
   // Send feedback to backend
   const addFeedback = async (newFeedback) => {
     try {
-      const res = await fetch('http://localhost:5000/api/feedback', {
+      const res = await fetch('https://keeper-app-g0o8.onrender.com/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newFeedback),
